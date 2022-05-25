@@ -4,4 +4,4 @@
 
 ## MoonbounceiOS
  
-Moonbounce iOS is an implementation of the [Moonbounce Library](https://github.com/OperatorFoundation/Moonbounce.git) for iOS apps.
+Moonbounce iOS is an implementation of the [Moonbounce Library](https://github.com/OperatorFoundation/MoonbounceLibrary.git) for iOS apps.
