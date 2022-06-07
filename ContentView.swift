@@ -8,16 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var connectButtonPressed = false
+    @State private var buttonTitle = ""
     
     var body: some View {
         NavigationView {
-                Button("Connect!") { }
+                Button("Connect!") {
+                    connectPressed()
+                }
                     .accessibilityLabel("Connect")
                     .buttonStyle(.borderedProminent)
                     .tint(.indigo)
         .navigationTitle("MoonbounceiOS")
         .navigationBarTitleDisplayMode(.inline)
         }
+        .alert(buttonTitle, isPresented: $connectButtonPressed) {
+            Button("Ok", role: .cancel) {}
+        } message: {
+            Text("Connect Button Pressed!")
+        }
+    }
+    
+    func connectPressed() {
+        connectButtonPressed = true
     }
 }
 
