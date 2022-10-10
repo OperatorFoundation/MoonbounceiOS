@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52C9EBE928380CAF00682E3B /* MoonbounceiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9EBE828380CAF00682E3B /* MoonbounceiOSApp.swift */; };
+		52C9EBEB28380CAF00682E3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9EBEA28380CAF00682E3B /* ContentView.swift */; };
+		52C9EBED28380CB000682E3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C9EBEC28380CB000682E3B /* Assets.xcassets */; };
+		52C9EBF028380CB000682E3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C9EBEF28380CB000682E3B /* Preview Assets.xcassets */; };
+		52F5D5A728456F490077F2C5 /* MoonbounceAppProxyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 52F5D5A628456F490077F2C5 /* MoonbounceAppProxyLibrary */; };
+		52F5D5A928456F490077F2C5 /* MoonbounceLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 52F5D5A828456F490077F2C5 /* MoonbounceLibrary */; };
+		52F5D5AB28456F490077F2C5 /* MoonbounceNetworkExtensionLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 52F5D5AA28456F490077F2C5 /* MoonbounceNetworkExtensionLibrary */; };
+		52F5D5AD28456F490077F2C5 /* MoonbounceShared in Frameworks */ = {isa = PBXBuildFile; productRef = 52F5D5AC28456F490077F2C5 /* MoonbounceShared */; };
+		52F5D5B0284576BC0077F2C5 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F5D5AF284576BC0077F2C5 /* NetworkExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52C9EBE528380CAF00682E3B /* MoonbounceiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonbounceiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C9EBE828380CAF00682E3B /* MoonbounceiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonbounceiOSApp.swift; sourceTree = "<group>"; };
+		52C9EBEA28380CAF00682E3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		52C9EBEC28380CB000682E3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52C9EBEF28380CB000682E3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52F5D5AE284576BC0077F2C5 /* MoonbounceiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoonbounceiOS.entitlements; sourceTree = "<group>"; };
+		52F5D5AF284576BC0077F2C5 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52C9EBE228380CAF00682E3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F5D5AD28456F490077F2C5 /* MoonbounceShared in Frameworks */,
+				52F5D5A728456F490077F2C5 /* MoonbounceAppProxyLibrary in Frameworks */,
+				52F5D5A928456F490077F2C5 /* MoonbounceLibrary in Frameworks */,
+				52F5D5B0284576BC0077F2C5 /* NetworkExtension.framework in Frameworks */,
+				52F5D5AB28456F490077F2C5 /* MoonbounceNetworkExtensionLibrary in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52241B7F283C05E3003CA1DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52F5D5AF284576BC0077F2C5 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52C9EBDC28380CAF00682E3B = {
+			isa = PBXGroup;
+			children = (
+				52C9EBE728380CAF00682E3B /* MoonbounceiOS */,
+				52C9EBE628380CAF00682E3B /* Products */,
+				52241B7F283C05E3003CA1DE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52C9EBE628380CAF00682E3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52C9EBE528380CAF00682E3B /* MoonbounceiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52C9EBE728380CAF00682E3B /* MoonbounceiOS */ = {
+			isa = PBXGroup;
+			children = (
+				52F5D5AE284576BC0077F2C5 /* MoonbounceiOS.entitlements */,
+				52C9EBE828380CAF00682E3B /* MoonbounceiOSApp.swift */,
+				52C9EBEA28380CAF00682E3B /* ContentView.swift */,
+				52C9EBEC28380CB000682E3B /* Assets.xcassets */,
+				52C9EBEE28380CB000682E3B /* Preview Content */,
+			);
+			path = MoonbounceiOS;
+			sourceTree = "<group>";
+		};
+		52C9EBEE28380CB000682E3B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				52C9EBEF28380CB000682E3B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52C9EBE428380CAF00682E3B /* MoonbounceiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52C9EBF328380CB000682E3B /* Build configuration list for PBXNativeTarget "MoonbounceiOS" */;
+			buildPhases = (
+				52C9EBE128380CAF00682E3B /* Sources */,
+				52C9EBE228380CAF00682E3B /* Frameworks */,
+				52C9EBE328380CAF00682E3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoonbounceiOS;
+			packageProductDependencies = (
+				52F5D5A628456F490077F2C5 /* MoonbounceAppProxyLibrary */,
+				52F5D5A828456F490077F2C5 /* MoonbounceLibrary */,
+				52F5D5AA28456F490077F2C5 /* MoonbounceNetworkExtensionLibrary */,
+				52F5D5AC28456F490077F2C5 /* MoonbounceShared */,
+			);
+			productName = MoonbounceiOS;
+			productReference = 52C9EBE528380CAF00682E3B /* MoonbounceiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52C9EBDD28380CAF00682E3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					52C9EBE428380CAF00682E3B = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 52C9EBE028380CAF00682E3B /* Build configuration list for PBXProject "MoonbounceiOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52C9EBDC28380CAF00682E3B;
+			packageReferences = (
+				52F5D5A528456F490077F2C5 /* XCRemoteSwiftPackageReference "MoonbounceLibrary" */,
+			);
+			productRefGroup = 52C9EBE628380CAF00682E3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52C9EBE428380CAF00682E3B /* MoonbounceiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52C9EBE328380CAF00682E3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C9EBF028380CB000682E3B /* Preview Assets.xcassets in Resources */,
+				52C9EBED28380CB000682E3B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52C9EBE128380CAF00682E3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C9EBEB28380CAF00682E3B /* ContentView.swift in Sources */,
+				52C9EBE928380CAF00682E3B /* MoonbounceiOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		52C9EBF128380CB000682E3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52C9EBF228380CB000682E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52C9EBF428380CB000682E3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoonbounceiOS/MoonbounceiOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MoonbounceiOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.OperatorFoundation.MoonbounceiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52C9EBF528380CB000682E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MoonbounceiOS/MoonbounceiOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MoonbounceiOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.OperatorFoundation.MoonbounceiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52C9EBE028380CAF00682E3B /* Build configuration list for PBXProject "MoonbounceiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C9EBF128380CB000682E3B /* Debug */,
+				52C9EBF228380CB000682E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52C9EBF328380CB000682E3B /* Build configuration list for PBXNativeTarget "MoonbounceiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52C9EBF428380CB000682E3B /* Debug */,
+				52C9EBF528380CB000682E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52F5D5A528456F490077F2C5 /* XCRemoteSwiftPackageReference "MoonbounceLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OperatorFoundation/MoonbounceLibrary.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52F5D5A628456F490077F2C5 /* MoonbounceAppProxyLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52F5D5A528456F490077F2C5 /* XCRemoteSwiftPackageReference "MoonbounceLibrary" */;
+			productName = MoonbounceAppProxyLibrary;
+		};
+		52F5D5A828456F490077F2C5 /* MoonbounceLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52F5D5A528456F490077F2C5 /* XCRemoteSwiftPackageReference "MoonbounceLibrary" */;
+			productName = MoonbounceLibrary;
+		};
+		52F5D5AA28456F490077F2C5 /* MoonbounceNetworkExtensionLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52F5D5A528456F490077F2C5 /* XCRemoteSwiftPackageReference "MoonbounceLibrary" */;
+			productName = MoonbounceNetworkExtensionLibrary;
+		};
+		52F5D5AC28456F490077F2C5 /* MoonbounceShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52F5D5A528456F490077F2C5 /* XCRemoteSwiftPackageReference "MoonbounceLibrary" */;
+			productName = MoonbounceShared;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 52C9EBDD28380CAF00682E3B /* Project object */;
+}
