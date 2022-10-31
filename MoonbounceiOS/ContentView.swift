@@ -7,60 +7,82 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: View
+{
+    @State private var serverIP: String = ""
+    @State private var port: String = ""
+    
     @State private var connectButtonPressed = false
     @State private var buttonTitle = ""
     @State private var ipAddress: String = ""
-    @State private var port: String = ""
-    @State private var disallow: String = ""
-    @State private var exclude: String = ""
     
     let configInfoLabel = "Enter Transport Information:"
+    let vpn = VPNManager(serverIP: "")
     
-    var body: some View {
-        VStack(alignment: .center, spacing: 15)
+    var body: some View
+    {
+        VStack()
         {
-            Text("Moonbounce")
+            Text("🌖 Moonbounce 🌔")
                 .bold()
                 .font(.largeTitle).foregroundColor(Color.black)
-                //.padding([.top], 40) //.bottom]
-            GroupBox(configInfoLabel)
+            
+            VStack(alignment: .leading)
             {
-                TextField("Server IP Address", text: $ipAddress) //Text("IP Address: \(ipAddress)")
-                TextField("Server Port Number", text: $port) //Text("Port: \(port)")
-                TextField("The App to Disallow", text: $disallow)
-                TextField("The Route to Exclude", text: $exclude)
-            }
-            .padding(40)
-                Button("Connect to VPN!")
+                TextField("Enter VPN Server IP...", text: $serverIP)
                 {
-                    connectPressed()
+                    vpn.serverIP = serverIP
                 }
-                .accessibilityLabel("Connect")
-                .buttonStyle(.borderedProminent)
-                .tint(.indigo)
-                .navigationBarTitleDisplayMode(.inline)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            }
+            
+            Button("Connect")
+            {
+                print("Moonbounce: 👆 Connect button tapped.")
+                
+                if (!self.vpn.manager.isEnabled)
+                {
+                    print("Moonbounce: calling enable()")
+                    self.vpn.enable()
+                }
+                
+                do
+                {
+                    print("Moonbounce: calling startVPNTunnel")
+                    try self.vpn.manager.connection.startVPNTunnel()
+                }
+                catch
+                {
+                    print("Moonbounce: Failed to start the tunnel: \(error)")
+                }
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(.indigo)
+            
+            Button("Disconnect")
+            {
+                print("Moonbounce: 👆 Connect button tapped.")
+                
+                self.vpn.manager.connection.stopVPNTunnel()
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(.red)
+            
+            HStack
+            {
                 Button("Test TCP")
                 {
-                    // do something
+                    // TODO: TCP Test
                 }
-                .accessibilityLabel("Connect")
-                .buttonStyle(.borderedProminent)
-                .tint(.indigo)
-                .navigationBarTitleDisplayMode(.inline)
+                
                 Button("Test UDP")
                 {
-                    // do something
+                    // TODO: UDP Test
                 }
-                .accessibilityLabel("Connect")
-                .buttonStyle(.borderedProminent)
-                .tint(.indigo)
-                .navigationBarTitleDisplayMode(.inline)
+            }
+            
         }
-    }
-    
-    func connectPressed() {
-        connectButtonPressed = true
+        .padding()
     }
 }
 
