@@ -12,11 +12,13 @@ public class VPNManager
 {
     public let manager = NETunnelProviderManager()
     public var serverIP: String
+    public var port: String
 
-    public init(serverIP: String)
+    public init(serverIP: String, port: String)
     {
         self.serverIP = serverIP
         self.manager.isEnabled = false
+        self.port = port
     }
 
     public func enable()

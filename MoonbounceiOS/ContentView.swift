@@ -17,7 +17,7 @@ struct ContentView: View
     @State private var ipAddress: String = ""
     
     let configInfoLabel = "Enter Transport Information:"
-    let vpn = VPNManager(serverIP: "")
+    let vpn = VPNManager(serverIP: "", port: "")
     
     var body: some View
     {
@@ -32,6 +32,11 @@ struct ContentView: View
                 TextField("Enter VPN Server IP...", text: $serverIP)
                 {
                     vpn.serverIP = serverIP
+                }
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                TextField("Enter Port", text: $port)
+                {
+                    vpn.port = port
                 }
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             }
