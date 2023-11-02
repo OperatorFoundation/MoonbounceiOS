@@ -7,6 +7,6 @@
 
 import MoonbounceNetworkExtensionLibrary
 
-class PacketTunnelProvider: PacketTunnelNetworkExtension {
+class PacketTunnelProvider: MoonbouncePacketTunnelProvider {
 
 }
